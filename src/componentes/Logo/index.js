@@ -10,7 +10,7 @@ const LogoImg = styled.img`
   margin-right: 10px;
 `;
 
-function Logo() {
+const Logo = () => {
   return (
     <LogoContainer>
       <LogoImg src={logo} alt="logo" />
@@ -19,6 +19,6 @@ function Logo() {
       </p>
     </LogoContainer>
   );
-}
+};
 
 export default Logo;

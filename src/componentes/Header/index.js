@@ -9,7 +9,7 @@ const HeaderContainer = styled.header`
   justify-content: center;
 `;
 
-function Header() {
+const Header = () => {
   return (
     <HeaderContainer>
       <Logo />
@@ -17,6 +17,6 @@ function Header() {
       <IconesHeader />
     </HeaderContainer>
   );
-}
+};
 
 export default Header;

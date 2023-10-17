@@ -14,16 +14,16 @@ const Icones = styled.ul`
 
 const icones = [perfil, sacola];
 
-function IconesHeader() {
+const IconesHeader = () => {
   return (
     <Icones>
-      {icones.map((icone) => (
-        <Icone>
+      {icones.map((icone, indice) => (
+        <Icone key={indice}>
           <img src={icone} alt=""></img>
         </Icone>
       ))}
     </Icones>
   );
-}
+};
 
 export default IconesHeader;

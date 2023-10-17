@@ -18,16 +18,16 @@ const Opcao = styled.li`
 
 const textoOpcoes = ["CATEGORIAS", "FAVORITOS", "MINHA ESTANTE"];
 
-function OpcoesHeader() {
+const OpcoesHeader = () => {
   return (
     <Opcoes>
-      {textoOpcoes.map((texto) => (
-        <Opcao>
+      {textoOpcoes.map((texto, indice) => (
+        <Opcao key={indice}>
           <p>{texto}</p>
         </Opcao>
       ))}
     </Opcoes>
   );
-}
+};
 
 export default OpcoesHeader;
